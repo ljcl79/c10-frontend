@@ -1,10 +1,8 @@
-import makeAnimated from "react-select/animated";
 import { Lenguaje } from "@devsafio/app/util/Lengueje";
 import dynamic from 'next/dynamic';
 
 const Select = dynamic(() => import('react-select'), { ssr: false })
 
-const animatedComponentes = makeAnimated();
 
 export default function Dropdown() {
   return (
