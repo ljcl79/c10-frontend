@@ -55,7 +55,7 @@ export default function EmailLogin() {
         }
     };
 
-    const submit_login = async () => {
+    const submitLogin = async () => {
         const isSuccess = await authUser(email, password);
         isSuccess.json().then((data) => {
                 localStorage.setItem('access_token', data.access_token);
@@ -98,7 +98,7 @@ export default function EmailLogin() {
                     </div>
                     <button
                         className="flex justify-center border border-[#000000] mt-10 shadow-md rounded-lg px-6 pr-6 py-3 gap-2 text-azul"
-                        onClick={() => submit_login()}
+                        onClick={() => submitLogin()}
                         type="submit"
                     >
                         Login
