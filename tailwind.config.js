@@ -14,6 +14,7 @@ module.exports = {
       },
       colors: {
         azul: "#2738F5",
+        azulClaro: "#E2F2FE",
         claro: "#E2F2FE",
         azulito: "#008FF7"
       },
