@@ -12,7 +12,7 @@ const links = [
 
 export default function LoginForm() {
   const router = useRouter();
-  const { data: session, status } = useSession();
+  const { data: status } = useSession();
 
   if (status === 'authenticated'){
     router.push("/views/Form", { scroll: false });
